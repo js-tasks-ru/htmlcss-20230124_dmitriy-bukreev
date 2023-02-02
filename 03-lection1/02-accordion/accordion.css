@@ -16,6 +16,10 @@
     Used this instead: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details#customizing_the_disclosure_widget
     */
     list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .accordion__summary:after {
