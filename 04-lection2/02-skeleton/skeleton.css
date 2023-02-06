@@ -11,6 +11,7 @@
     width: var(--size);
     border-radius: 50%;
     background-color: var(--grey-2);
+    flex-shrink: 0;
 }
 
 .skeleton__line {
@@ -27,13 +28,21 @@
 
 .skeleton__title {
     display: flex;
-    
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.skeleton__content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .skeleton__line_short {
-    width: 172px;
+    width: 50%;
 }
 
 .skeleton__line_middle {
-    width: 257px;
+    width: 75%;
 }
