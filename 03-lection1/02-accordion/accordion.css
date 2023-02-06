@@ -1,14 +1,11 @@
 .accordion {
-    --background-item: var(--white);
-    --border-item: var(--gray-3);
-    --text-summary: var(--black);
-    --text-content: var(--gray-4);
+
 }
 
 .accordion__item {
     padding: 24px 32px;
-    background: var(--background-item);
-    border: 1px solid var(--border-item);
+    background: var(--white);
+    border: 1px solid var(--gray-3);
     border-radius: 8px;
     display: block;
     margin-bottom: 8px;
@@ -25,7 +22,7 @@
     font-size: 16px;
     line-height: 24px;
     list-style: none;
-    color: var(--text-summary);
+    color: var(--black);
 
     display: flex;
     justify-content: space-between;
@@ -53,7 +50,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: var(--text-content);
+    color: var(--gray-4);
     padding: 16px 0px 8px;
 }
 
