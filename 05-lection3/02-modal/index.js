@@ -9,11 +9,12 @@
 
     modalOpen.addEventListener('click', () => {
         modal.style.display = 'block';
-        document.body.overflow = 'hidden';
+        // Doesn't work without it
+        document.body.style.overflow = 'hidden';
     });
 
     close.addEventListener('click', () => {
         modal.style.display = 'none';
-        document.body.overflow = 'initial';
+        document.body.style.overflow = 'initial';
     });
 })();
