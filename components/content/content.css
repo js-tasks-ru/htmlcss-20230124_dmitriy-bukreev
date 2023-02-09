@@ -1,0 +1,7 @@
+.content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 56px;
+    background: #F9FAFC;
+    padding: 36px 165px;
+}
