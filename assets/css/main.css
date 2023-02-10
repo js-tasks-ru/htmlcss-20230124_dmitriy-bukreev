@@ -8,7 +8,7 @@
 @import '../../components/card/card.css';
 @import '../../components/content/content.css';
 @import '../../components/menu/menu.css';
-@import '../../components/component/component.css';
+@import '../../components/component-description/component-description.css';
 
 :root {
     --white: #ffffff;
