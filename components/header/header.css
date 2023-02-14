@@ -1,6 +1,5 @@
 .header {
-    padding-top: 96px;
-    padding-bottom: 77px;
+    padding: 24px 0px;
     background-color: var(--white);
 }
 
@@ -11,4 +10,17 @@
     font-style: normal;
     font-family: Inter;
     color: var(--black);
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 17px 0px;
+    }
+
+    .header__title {
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 38px;
+        color: var(--grey-4);
+    }
 }
