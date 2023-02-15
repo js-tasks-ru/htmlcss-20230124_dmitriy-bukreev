@@ -20,11 +20,13 @@
 }
 
 .modal__close {
+    --size: 16px;
+    height: var(--size);
+    width: var(--size);
     position: absolute;
     right: 15px;
     cursor: pointer;
 }
-
 
 .modal__title {
     font-family: 'Inter';
