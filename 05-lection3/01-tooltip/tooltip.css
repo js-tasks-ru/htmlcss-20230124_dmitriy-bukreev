@@ -4,6 +4,9 @@
 }
 
 .tooltip__trigger {
+    --size: 24px;
+    height: var(--size);
+    width: var(--size); 
     cursor: pointer;
 }
 
