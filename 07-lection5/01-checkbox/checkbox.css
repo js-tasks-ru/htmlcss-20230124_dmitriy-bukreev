@@ -17,9 +17,8 @@
 }
 
 .checkbox__control {
-    --size: 28px;
-    width: var(--size);
-    height: var(--size);
+    width: 28px;
+    height: 28px;
     background: var(--white);
     border: 1px solid var(--grey-2);
     border-radius: 4px;
@@ -29,9 +28,8 @@
 }
 
 .checkbox__icon {
-    --size: 24px;
-    height: var(--size);
-    width: var(--size);
+    height: 24px;
+    width: 24px;
     color: var(--white);
     display: none;
 }
