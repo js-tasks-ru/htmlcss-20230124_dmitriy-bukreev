@@ -16,9 +16,8 @@
 }
 
 .radio__control {
-    --size: 28px;
-    width: var(--size);
-    height: var(--size);
+    width: 28px;
+    height: 28px;
     background: var(--white);
     border: 1px solid var(--grey-2);
     border-radius: 50%;
@@ -28,9 +27,8 @@
 }
 
 .radio__icon {
-    --size: 18px;
-    width: var(--size);
-    height: var(--size);
+    width: 18px;
+    height: 18px;
     background: var(--blue);
     border-radius: 50%;
     display: none;
