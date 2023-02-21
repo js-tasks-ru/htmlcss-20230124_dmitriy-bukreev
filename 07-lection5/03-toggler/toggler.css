@@ -27,9 +27,8 @@
 }
 
 .toggler__icon {
-    --size: 24px;
-    width: var(--size);
-    height: var(--size);
+    width: 24px;
+    height: 24px;
     background: var(--grey-2);
     border-radius: 50%;
     margin: 0px 2px;
