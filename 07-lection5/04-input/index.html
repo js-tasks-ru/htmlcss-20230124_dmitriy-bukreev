@@ -6,27 +6,29 @@
         <link rel="stylesheet" href="./input.css">
     </head>
     <body>
-        <label class="form-group">
-            <div class="form-group__title">Label</div>
+        <div class="form-group">
+            <label class="form-group__title" for="default_input">Label</label>
             <div class="form-group__wrapper">
-                <input class="form-group__input" type="text" placeholder="Placeholder">
+                <input class="form-group__input" type="text" placeholder="Placeholder" id="default_input">
+                <svg class="form-group__icon form-group__icon_success"><use href="../../assets/images/icons_sprite.svg#success"></use></svg>
+                <svg class="form-group__icon form-group__icon_error"><use href="../../assets/images/icons_sprite.svg#error"></use></svg>
             </div>
-        </label>
-        <label class="form-group form-group_success">
-            <div class="form-group__title">Success</div>
+        </div>
+        <div class="form-group form-group_success">
+            <label class="form-group__title" for="success_input">Success</label>
             <div class="form-group__wrapper">
-                <input class="form-group__input" type="text" placeholder="Placeholder" value="Success">
-                <!-- Icon added with JS? -->
-                <svg class="form-group__icon"><use href="../../assets/images/icons_sprite.svg#success"></use></svg>
+                <input class="form-group__input" type="text" placeholder="Placeholder" id="success_input" value="Success">
+                <svg class="form-group__icon form-group__icon_success"><use href="../../assets/images/icons_sprite.svg#success"></use></svg>
+                <svg class="form-group__icon form-group__icon_error"><use href="../../assets/images/icons_sprite.svg#error"></use></svg>
             </div>
-        </label>
-        <label class="form-group form-group_invalid">
-            <div class="form-group__title">Error</div>
+        </div>
+        <div class="form-group form-group_invalid">
+            <label class="form-group__title" for="error_input">Error</label>
             <div class="form-group__wrapper">
-                <input class="form-group__input" type="text" placeholder="Placeholder" value="Error">
-                <!-- Icon added with JS? -->
-                <svg class="form-group__icon"><use href="../../assets/images/icons_sprite.svg#error"></use></svg>
+                <input class="form-group__input" type="text" placeholder="Placeholder" id="error_input" value="Error">
+                <svg class="form-group__icon form-group__icon_success"><use href="../../assets/images/icons_sprite.svg#success"></use></svg>
+                <svg class="form-group__icon form-group__icon_error"><use href="../../assets/images/icons_sprite.svg#error"></use></svg>
             </div>
-        </label>
+        </div>
     </body>
 </html>
