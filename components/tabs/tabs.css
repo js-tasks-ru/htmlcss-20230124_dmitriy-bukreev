@@ -2,9 +2,10 @@
     background: var(--white);
 }
 
-.tabs__scroller {
+.tabs__scrollable {
     display: flex;
     gap: 40px;
+    overflow-x: auto;
 }
 
 .tabs__label {
@@ -16,14 +17,15 @@
     color: var(--grey-3);
     padding-bottom: 8px;
     display: block;
+    border-bottom: 5px solid transparent;
 }
 
-#all-tab:checked ~ .container .tabs__label[for="all-tab"],
-#elements-tab:checked ~ .container .tabs__label[for="elements-tab"],
-#containers-tab:checked ~ .container .tabs__label[for="containers-tab"], 
-#templates-tab:checked ~ .container .tabs__label[for="templates-tab"] {
+#all-tab:checked ~ .tabs__scroller .tabs__label[for="all-tab"],
+#elements-tab:checked ~ .tabs__scroller .tabs__label[for="elements-tab"],
+#containers-tab:checked ~ .tabs__scroller .tabs__label[for="containers-tab"], 
+#templates-tab:checked ~ .tabs__scroller .tabs__label[for="templates-tab"] {
     color: var(--black);
-    border-bottom: 5px solid var(--black);
+    border-bottom-color: var(--black);
 }
 
 .tabs__content_all, .tabs__content_elements,
