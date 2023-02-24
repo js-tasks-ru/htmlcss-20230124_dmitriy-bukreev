@@ -1,6 +1,64 @@
 .card {
-    height: 300px;
     background: #FFFFFF;
     box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 12px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.card:link {
+    text-decoration: none;
+}
+
+.card__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    padding: 30px;
+}
+
+
+.card__footer {
+    padding: 13px 0px 32px;
+    border-top: 2px solid transparent;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+   .card__footer {
+        border-top-color: var(--grey-2);
+   }    
+}
+
+.card__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: var(--black);
+    margin-bottom: 6px;
+}
+
+.card__type {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.card .card__item_displayed {
+    display: block;
+}
+
+.card__grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 16px 32px;
+    align-content: center;
 }
