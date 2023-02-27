@@ -1,14 +1,9 @@
-
-.burger-menu__icon {
-    height: 24px;
-    width: 24px;
-}
-
 .burger-menu__button {
     outline: none;
     border: none;
     background-color: transparent;
 }
+
 
 .burger-menu__button_close {
     height: 32px;
