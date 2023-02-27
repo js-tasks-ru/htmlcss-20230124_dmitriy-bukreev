@@ -56,3 +56,7 @@ when it's close to bottom border of viewport */
     border-bottom-color: transparent;
     border-top-color: var(--blue)
 }
+
+.tooltip__bubble_displayed {
+    display: block;
+}

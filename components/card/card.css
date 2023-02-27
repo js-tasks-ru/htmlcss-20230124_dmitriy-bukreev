@@ -16,8 +16,15 @@
     justify-content: center;
     min-height: 200px;
     padding: 30px;
+    pointer-events: none;
 }
 
+.card__body_grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 16px 32px;
+    align-content: center;
+}
 
 .card__footer {
     padding: 13px 0px 32px;
@@ -52,13 +59,3 @@
     text-decoration: none;
 }
 
-.card .card__item_displayed {
-    display: block;
-}
-
-.card__grid {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 16px 32px;
-    align-content: center;
-}
