@@ -4,10 +4,11 @@
 }
 
 .tooltip__trigger {
-    --size: 24px;
-    height: var(--size);
-    width: var(--size); 
+    height: 24px;
+    width: 24px; 
     cursor: pointer;
+    display: block;
+    color: var(--black);
 }
 
 .tooltip__bubble {
@@ -29,6 +30,13 @@
     transform: translateX(-50%);
 }
 
+/* Might be added with JS to display tooltip on top
+when it's close to bottom border of viewport */
+.tooltip__bubble_top {
+    bottom: calc(100% + 8px);
+    top: initial;
+}
+
 .tooltip__trigger:hover ~ .tooltip__bubble {
     display: block;
 }
@@ -41,4 +49,14 @@
     bottom: 100%;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.tooltip__bubble_top:before {
+    top: 100%;
+    border-bottom-color: transparent;
+    border-top-color: var(--blue)
+}
+
+.tooltip__bubble_displayed {
+    display: block;
 }
