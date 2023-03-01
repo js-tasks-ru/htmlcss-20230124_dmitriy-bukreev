@@ -24,3 +24,9 @@
         color: var(--grey-4);
     }
 }
+
+.header__menu {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
