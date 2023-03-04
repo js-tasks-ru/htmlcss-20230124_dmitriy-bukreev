@@ -1,14 +1,28 @@
-.tabs {
-    background: var(--white);
+// Classes use to make SCSS produce coma separated classes
+// with @each rule
+%selected_label {
+  color: var(--text);
+  border-bottom-color: var(--text);
 }
 
-.tabs__scrollable {
+%invisible_tab {
+  display: none;
+}
+
+%visible_tab {
+  display: block;
+}
+
+.tabs {
+  background: var(--background-primary);
+
+  &__scrollable {
     display: flex;
     gap: 40px;
     overflow-x: auto;
-}
+  }
 
-.tabs__label {
+  &__label {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -18,30 +32,27 @@
     padding-bottom: 8px;
     display: block;
     border-bottom: 5px solid transparent;
-}
+  }
 
-#all-tab:checked ~ .tabs__scroller .tabs__label[for="all-tab"],
-#elements-tab:checked ~ .tabs__scroller .tabs__label[for="elements-tab"],
-#containers-tab:checked ~ .tabs__scroller .tabs__label[for="containers-tab"], 
-#templates-tab:checked ~ .tabs__scroller .tabs__label[for="templates-tab"] {
-    color: var(--black);
-    border-bottom-color: var(--black);
-}
+  $tab_names: all-tab, elements-tab, containers-tab, templates-tab;
 
-.tabs__content_all, .tabs__content_elements,
-.tabs__content_containers, .tabs__content_templates {
-    display: none;
-}
+  @each $name in $tab_names {
+    ##{$name}:checked ~ &__scroller &__label[for='#{$name}'] {
+      @extend %selected_label;
+    }
 
-#all-tab:checked ~ .tabs__content_all,
-#elements-tab:checked ~ .tabs__content_elements,
-#containers-tab:checked ~ .tabs__content_containers, 
-#templates-tab:checked ~ .tabs__content_templates {
-    display: block;
-}
+    &__content_#{$name} {
+      @extend %invisible_tab;
+    }
 
-.tabs__input {
+    ##{$name}:checked ~ &__content_#{$name} {
+      @extend %visible_tab;
+    }
+  }
+
+  &__input {
     position: absolute;
     outline: none;
     clip: rect(0, 0, 0, 0);
+  }
 }

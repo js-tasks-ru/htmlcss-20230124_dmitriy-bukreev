@@ -4,8 +4,10 @@ module.exports = {
   plugins: [
     require('postcss-import'),
     require('postcss-advanced-variables'),
+    require('postcss-each'),
     require('postcss-nested'),
+    require('postcss-extend'),
     require('autoprefixer'),
-    require('cssnano'),
+    // require('cssnano'),
   ],
 };

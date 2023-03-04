@@ -1,13 +1,10 @@
 .preview {
-    background: var(--preview-background);
-    border-top: 1px solid var(--grey-2);
-    border-bottom: 1px solid var(--grey-2);
-    padding: 68px 0px 204px;
-    background: #F9FAFC;
-}
+  background: var(--background-secondary);
+  padding: 68px 0px 204px;
 
-.preview__inner {
+  &__inner {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
+  }
 }
