@@ -1,0 +1,68 @@
+.radio {
+  display: inline-flex;
+  position: relative;
+
+  &__input {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+  }
+
+  &__state {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+  }
+
+  &__control {
+    width: 28px;
+    height: 28px;
+    background: var(--white);
+    border: 1px solid var(--grey-2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+    background: var(--blue);
+    border-radius: 50%;
+    display: none;
+  }
+
+  &__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text);
+  }
+
+  @include handle-state(':checked', control) {
+    border: 2px solid var(--blue);
+  }
+
+  @include handle-state(':checked', icon) {
+    display: block;
+  }
+
+  @include handle-state(':focus', title) {
+    text-decoration: underline;
+  }
+
+  @include handle-state(':disabled', control) {
+    background-color: var(--grey-2);
+  }
+
+  @include handle-state(':disabled', title) {
+    color: var(--grey-2);
+  }
+
+  @include handle-state(':disabled') {
+    cursor: not-allowed;
+  }
+}

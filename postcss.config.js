@@ -3,11 +3,8 @@ module.exports = {
   map: { inline: true },
   plugins: [
     require('postcss-import'),
-    require('postcss-advanced-variables'),
-    require('postcss-each'),
-    require('postcss-nested'),
-    require('postcss-extend'),
+    require('@csstools/postcss-sass'),
     require('autoprefixer'),
-    // require('cssnano'),
+    require('cssnano'),
   ],
 };

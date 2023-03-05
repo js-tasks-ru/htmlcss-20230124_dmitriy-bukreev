@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "test": "cross-env NODE_ENV=test mocha --no-warnings --ignore=node_modules/** **/*.test.js",
-    "build": "npx postcss ./src/main.scss -o ./assets/css/main.css",
+    "build": "npx postcss ./src/main.scss -o ./assets/css/main.css --verbose",
     "prepare": "husky install"
   },
   "lint-staged": {
@@ -22,21 +22,22 @@
   "author": "Sergey Zelenov",
   "license": "ISC",
   "devDependencies": {
+    "@csstools/postcss-sass": "^5.0.1",
     "autoprefixer": "^10.4.13",
     "chai": "^4.2.0",
     "cross-env": "^7.0.2",
     "cssnano": "^5.1.15",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
-    "mocha": "^7.1.2",
+    "mocha": "^10.2.0",
     "postcss": "^8.4.21",
     "postcss-advanced-variables": "^3.0.1",
     "postcss-cli": "^10.1.0",
-    "postcss-each": "^1.1.0",
     "postcss-extend": "^1.0.5",
     "postcss-import": "^15.1.0",
     "postcss-nested": "^6.0.1",
     "postcss-scss": "^4.0.6",
+    "precss": "^4.0.0",
     "prettier": "2.8.4",
     "sass": "^1.58.3",
     "stylelint": "^15.2.0",

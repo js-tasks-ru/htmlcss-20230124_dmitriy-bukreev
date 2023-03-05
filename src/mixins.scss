@@ -11,3 +11,15 @@
     }
   }
 }
+
+@mixin handle-state($state, $element: false) {
+  @if $element {
+    &__input#{$state} ~ &__state &__#{$element} {
+      @content;
+    }
+  } @else {
+    &__input#{$state} ~ &__state {
+      @content;
+    }
+  }
+}
