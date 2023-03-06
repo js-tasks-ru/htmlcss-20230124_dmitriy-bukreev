@@ -1,0 +1,21 @@
+.theme-changer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  &__light {
+    color: var(--text);
+  }
+
+  &__dark {
+    color: var(--grey-3);
+  }
+
+  @include handle-state(':checked', light) {
+    color: var(--grey-3);
+  }
+
+  @include handle-state(':checked', dark) {
+    color: var(--text);
+  }
+}
