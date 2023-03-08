@@ -38,6 +38,14 @@
   --background-primary: var(--white);
   --background-secondary: var(--grey-1);
   --text: var(--black);
+  --accent: var(--black);
+}
+
+html[data-theme-dark] {
+  --background-primary: var(--black);
+  --background-secondary: var(--grey-4);
+  --text: var(--grey-3);
+  --accent: var(--white);
 }
 
 body {
