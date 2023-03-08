@@ -63,4 +63,20 @@
   @include handle-state('disabled') {
     cursor: not-allowed;
   }
+
+  &__before {
+    color: var(--black);
+  }
+
+  &__after {
+    color: var(--grey-3);
+  }
+
+  @include handle-state(':checked', before) {
+    color: var(--grey-3);
+  }
+
+  @include handle-state(':checked', after) {
+    color: var(--white);
+  }
 }
