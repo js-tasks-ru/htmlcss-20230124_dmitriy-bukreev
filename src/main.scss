@@ -1,0 +1,46 @@
+@import 'fonts.css';
+@import 'reset.css';
+@import 'mixins.scss';
+@import '../components/page/page.scss';
+@import '../components/header/header.scss';
+@import '../components/preview/preview.scss';
+@import '../components/footer/footer.scss';
+@import '../components/container/container.scss';
+@import '../components/card/card.scss';
+@import '../components/content/content.scss';
+@import '../components/menu/menu.scss';
+@import '../components/component-description/component-description.scss';
+@import '../components/tabs/tabs.scss';
+@import '../components/tooltip/tooltip.scss';
+@import '../components/checkbox/checkbox.scss';
+@import '../components/radio/radio.scss';
+@import '../components/calendar/calendar.scss';
+
+:root {
+  --white: #ffffff;
+  --black: #212429;
+  --pink: #f784ad;
+  --purple: #7048e8;
+  --blue: #4263eb;
+  --red: #f03d3e;
+  --grey-1: #f8f9fa;
+  --grey-2: #dde2e5;
+  --grey-3: #acb5bd;
+  --grey-4: #495057;
+
+  --error: var(--red);
+  --success: var(--blue);
+
+  --background-primary: var(--white);
+  --background-secondary: var(--grey-1);
+  --text: var(--black);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
