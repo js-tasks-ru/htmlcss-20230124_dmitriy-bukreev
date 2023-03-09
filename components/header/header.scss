@@ -6,6 +6,12 @@
     padding: 17px 0px;
   }
 
+  &__inner {
+    display: grid;
+    grid: 'left center right';
+    align-items: center;
+  }
+
   &__title {
     font-weight: 500;
     font-size: 50px;
@@ -19,5 +25,17 @@
       font-size: 28px;
       line-height: 38px;
     }
+  }
+
+  &__menu {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    display: none;
+  }
+
+  &__theme-changer {
+    grid-area: right;
+    justify-self: right;
   }
 }

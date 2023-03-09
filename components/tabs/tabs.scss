@@ -1,7 +1,7 @@
 // Classes use to make SCSS produce coma separated classes
 // with @each rule
 %selected_label {
-  color: var(--text);
+  color: var(--accent);
   border-bottom-color: var(--text);
 }
 

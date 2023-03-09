@@ -15,6 +15,9 @@
 @import '../components/checkbox/checkbox.scss';
 @import '../components/radio/radio.scss';
 @import '../components/calendar/calendar.scss';
+@import '../components/logo/logo.scss';
+@import '../components/icon/icon.css';
+@import '../components/toggler/toggler.scss';
 
 :root {
   --white: #ffffff;
@@ -34,6 +37,14 @@
   --background-primary: var(--white);
   --background-secondary: var(--grey-1);
   --text: var(--black);
+  --accent: var(--black);
+}
+
+html[data-theme-dark] {
+  --background-primary: var(--black);
+  --background-secondary: var(--grey-4);
+  --text: var(--grey-3);
+  --accent: var(--white);
 }
 
 body {

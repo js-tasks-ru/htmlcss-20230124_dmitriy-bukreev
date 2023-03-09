@@ -7,9 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
+    <script defer src="./assets/js/theme-changer.js"></script>
     <div class="page">
       <header class="header">
         <div class="container">
+          <div class="header__inner">
+            <button class="header__menu" id="burger-menu-open">
+              <svg class="icon">
+                <use href="./assets/images/icons_sprite.svg#menu"></use>
+              </svg>
+            </button>
+            <svg class="logo">
+              <use href="./assets/images/icons_sprite.svg#logo"></use>
+            </svg>
+            <label class="toggler header__theme-changer">
+              <input
+                id="theme-changer"
+                class="toggler__input"
+                type="checkbox"
+              />
+              <div class="toggler__state">
+                <svg class="icon toggler__before">
+                  <use href="./assets/images/icons_sprite.svg#sun"></use>
+                </svg>
+                <div class="toggler__control">
+                  <div class="toggler__icon"></div>
+                </div>
+                <svg class="icon toggler__after">
+                  <use href="./assets/images/icons_sprite.svg#moon"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
           <h1 class="header__title">Reusable component library</h1>
         </div>
       </header>
