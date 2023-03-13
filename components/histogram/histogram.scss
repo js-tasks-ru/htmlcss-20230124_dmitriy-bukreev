@@ -1,0 +1,62 @@
+.histogram {
+  background: var(--background-primary);
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+  padding: 16px 24px 24px;
+  --element-color: var(--blue);
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text);
+    opacity: .8;
+  }
+
+  &__details {
+    padding-top: 3px;
+    color: var(--blue);
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--element-color);
+  }
+
+  &__value {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--text);
+  }
+
+  &__chart {
+    height: 50px;
+    margin-top: 39px;
+    display: flex;
+    align-items: flex-end;
+    gap: 1px;
+  }
+
+  &__bar {
+    background-color: var(--element-color);
+    flex: auto;
+  }
+}
