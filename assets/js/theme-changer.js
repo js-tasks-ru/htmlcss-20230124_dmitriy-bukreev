@@ -1,6 +1,10 @@
-const changer = document.getElementById('theme-changer');
-const html = document.documentElement;
+const buttons = document.querySelectorAll('[data-theme-changer]');
 
-changer.addEventListener('change', function () {
-  html.toggleAttribute('data-theme-dark');
-});
+for (let button of buttons) {
+  button.onchange = function () {
+    document.documentElement.toggleAttribute('data-theme-dark');
+    for (button of buttons) {
+      button.checked = this.checked;
+    }
+  };
+}

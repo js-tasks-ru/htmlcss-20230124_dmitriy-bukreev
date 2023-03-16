@@ -32,10 +32,20 @@
     border: none;
     background-color: transparent;
     display: none;
+    color: var(--text);
+
+    @include respond(tablet) {
+      display: block;
+      justify-self: left;
+    }
   }
 
   &__theme-changer {
     grid-area: right;
     justify-self: right;
+
+    @include respond(tablet) {
+      display: none;
+    }
   }
 }
