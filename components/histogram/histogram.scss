@@ -59,4 +59,8 @@
     background-color: var(--element-color);
     flex: auto;
   }
+
+  &_embedded {
+    flex-grow: 1;
+  }
 }
