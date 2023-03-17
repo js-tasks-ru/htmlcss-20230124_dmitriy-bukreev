@@ -336,13 +336,85 @@
                   </div>
                 </a>
 
+                <!-- Avatar card -->
                 <a class="card">
                   <div class="card__body">
-                    <!-- TODO -->
+                    <div class="avatar avatar_large">
+                      <img
+                        class="avatar__image"
+                        src="./assets/images/avatar-200.jpg"
+                        alt="Avatar image"
+                      />
+                    </div>
                   </div>
                   <div class="card__footer">
-                    <div class="card__title"></div>
-                    <div class="card__type"></div>
+                    <div class="card__title">Avatar</div>
+                    <div class="card__type">Element</div>
+                  </div>
+                </a>
+
+                <!-- Histogram card -->
+                <a class="card">
+                  <div class="card__body">
+                    <div class="histogram histogram_embedded">
+                      <div class="histogram__header">
+                        <div>
+                          <p class="histogram__title">Total orders</p>
+                          <h4 class="histogram__value">50254</h4>
+                        </div>
+                        <p class="histogram__details">View all</p>
+                      </div>
+                      <div class="histogram__chart">
+                        <div class="histogram__bar" style="height: 100%"></div>
+                        <div class="histogram__bar" style="height: 75%"></div>
+                        <div class="histogram__bar" style="height: 50%"></div>
+                        <div class="histogram__bar" style="height: 25%"></div>
+                        <div class="histogram__bar" style="height: 1%"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__footer">
+                    <div class="card__title">Histogram</div>
+                    <div class="card__type">Element</div>
+                  </div>
+                </a>
+
+                <!-- Modal card -->
+                <a class="card">
+                  <div class="card__body">
+                    <div class="modal modal_embedded">
+                      <div class="modal__window modal__window_embedded">
+                        <div class="modal__content">
+                          <div class="form-group">
+                            <label class="form-group__title" for="name_input"
+                              >Name</label
+                            >
+                            <input
+                              class="form-group__input form-group__input_embedded"
+                              type="text"
+                              placeholder="Placeholder"
+                              id="name_input"
+                            />
+                            <label class="form-group__title" for="name_input"
+                              >Email</label
+                            >
+                            <input
+                              class="form-group__input form-group__input_embedded"
+                              type="text"
+                              placeholder="Placeholder"
+                              id="name_input"
+                            />
+                            <button class="button button_primary">
+                              Submit
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__footer">
+                    <div class="card__title">Modal dialog</div>
+                    <div class="card__type">Container</div>
                   </div>
                 </a>
               </div>
