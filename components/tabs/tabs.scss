@@ -39,7 +39,8 @@
     white-space: nowrap;
   }
 
-  $tab_names: all-tab, elements-tab, containers-tab, templates-tab;
+  $tab_names: all-tab, elements-tab, containers-tab, templates-tab, html-tab,
+    css-tab;
 
   @each $name in $tab_names {
     ##{$name}:checked ~ &__scroller &__label[for='#{$name}'] {
