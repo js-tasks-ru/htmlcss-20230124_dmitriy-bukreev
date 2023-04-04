@@ -8,6 +8,7 @@
   transition: transform 200ms linear;
   z-index: 100;
   background-color: var(--background-primary);
+  overflow: auto;
 
   &[data-open] {
     transform: none;
@@ -41,33 +42,11 @@
   }
 
   &__theme-changer {
-    padding: 16px 0px;
+    padding: 24px 0px;
     display: flex;
     justify-content: space-between;
-  }
-
-  &__section {
-    padding: 16px 0px;
-  }
-
-  &__item {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    padding: 8px 0px;
-    display: block;
+    align-items: center;
+    @extend %text_M;
     color: var(--text);
-  }
-
-  &__title {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;
-    color: var(--grey-3);
-    padding: 8px 0px;
   }
 }

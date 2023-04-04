@@ -1,6 +1,6 @@
-@import 'fonts.css';
-@import 'reset.css';
 @import 'mixins.scss';
+@import 'fonts.scss';
+@import 'reset.css';
 @import '../components/page/page.scss';
 @import '../components/header/header.scss';
 @import '../components/preview/preview.scss';
@@ -9,7 +9,7 @@
 @import '../components/card/card.scss';
 @import '../components/content/content.scss';
 @import '../components/menu/menu.scss';
-@import '../components/component-description/component-description.scss';
+@import '../components/description/description.scss';
 @import '../components/tabs/tabs.scss';
 @import '../components/tooltip/tooltip.scss';
 @import '../components/checkbox/checkbox.scss';
@@ -25,6 +25,7 @@
 @import '../components/modal/modal.scss';
 @import '../components/input/input.scss';
 @import '../components/button/button.scss';
+@import '../components/license/license.scss';
 
 :root {
   --white: #ffffff;

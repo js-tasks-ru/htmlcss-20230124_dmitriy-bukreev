@@ -38,7 +38,7 @@
 
                 <div class="separator"></div>
                 <div class="burger-menu__theme-changer">
-                  <p class="burger-menu__item">Dark mode</p>
+                  <p>Dark mode</p>
                   <label class="toggler">
                     <input
                       class="toggler__input"
@@ -59,13 +59,20 @@
                   </label>
                 </div>
                 <div class="separator"></div>
-                <nav class="burger-menu__section">
-                  <h4 class="burger-menu__title">Elements</h4>
-                  <a class="burger-menu__item">Avatar</a>
-                  <a class="burger-menu__item burger-menu__item_current">
-                    Custom form elements
-                  </a>
-                  <a class="burger-menu__item">Button</a>
+                <nav class="menu menu_tablet">
+                  <div class="menu__section">
+                    <h4 class="menu__title">Elements</h4>
+                    <a class="menu__item">Avatar</a>
+                    <a class="menu__item"> Custom form elements </a>
+                    <a class="menu__item">Histogram</a>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="menu__section">
+                    <h4 class="menu__title">Container</h4>
+                    <a class="menu__item" href="/pages/tooltip.html">Tooltip</a>
+                    <a class="menu__item">Calender</a>
+                    <a class="menu__item">Modal dialog</a>
+                  </div>
                 </nav>
               </div>
             </div>
@@ -140,9 +147,9 @@
             <div class="container">
               <div class="preview__inner">
                 <!-- Tooltip card -->
-                <a href="tooltip.html" class="card">
+                <a href="/pages/tooltip.html" class="card">
                   <div class="card__body">
-                    <div class="tooltip card__tooltip">
+                    <div class="tooltip">
                       <svg class="tooltip__trigger">
                         <use
                           href="../../assets/images/icons_sprite.svg#questionmark"
